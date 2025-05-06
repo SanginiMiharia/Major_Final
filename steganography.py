@@ -9,7 +9,10 @@ class DCTSteganographyApp:
         self.root = root
         self.root.title("DCT Steganography")
         self.root.geometry("400x200")
-        self.label = tk.Label(root, text="DCT Steganography", font=("Arial", 16))
+        self.label = tk.Label(
+        root, text="DCT Steganography", font=("Arial", 16)
+        )
+
         self.label.pack(pady=10)
         self.encode_button = tk.Button(
             root, text="Encode Message", command=self.encode_message
